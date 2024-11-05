@@ -1,20 +1,28 @@
 nav {
-  border-bottom: var(--orange-primary) 2px solid;
+  border-bottom: var(--green-secondary) 2px solid;
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: space-around;
   margin-bottom: 20px;
+  background-color: var(--beige-primary);
+  padding: 10px 0;
 }
 
 nav > button {
-  background-color: var(--orange-terciary);
-  border: var(--orange-terciary) solid 2px;
-  color: #f07818;
+  background-color: var(--green-primary);
+  border: var(--green-primary) solid 2px;
+  color: white;
   font-size: 100%;
   font-weight: 700;
   height: 40px;
   min-width: 100px;
   white-space: nowrap;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav > button:hover {
+  background-color: var(--beige-secondary);
+  color: var(--green-secondary);
 }
 
 .favorite-recipes-container {
@@ -25,8 +33,9 @@ nav > button {
 }
 
 .recipe-page-card {
+  background-color: var(--beige-primary);
   border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px , rgba(0, 0, 0, 0.23) 0 3px 6px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
   height: fit-content;
   margin-bottom: 20px;
   overflow: hidden;
@@ -41,8 +50,8 @@ nav > button {
 
 .recipe-page-card h3 {
   align-items: center;
-  background-color: var(--blue-secondary);
-  color: black;
+  background-color: var(--green-secondary);
+  color: white;
   display: flex;
   font-size: 75%;
   height: 30px;
@@ -57,4 +66,3 @@ nav > button {
   font-weight: 600;
   margin: 0;
 }
-

@@ -1,16 +1,6 @@
 :root {
-
-  --orange-primary: #f07818;
-
-  --orange-secondary: #f0a830;
-
-  --orange-terciary: #fcebb6;
-
-  /* --orange-terciary: #e6b6fc ; */
-
-  --blue-primary: #005a69;
-
-  --blue-secondary: #40c0cb;
-
-  --blue-terciary: #89d1d8;
+  --olive-green: #798645;
+  --cream-light: #FEFAE0;
+  --beige-neutral: #F2EED7;
+  --dark-olive: #626F47;
 }

@@ -1,9 +1,21 @@
+:root {
+  --green-primary: #798645;
+  --beige-primary: #FEFAE0;
+  --beige-secondary: #F2EED7;
+  --green-secondary: #626F47;
+}
+
 body {
-  background-color: var(--orange-terciary);
+  background-color: var(--beige-primary);
+  color: var(--green-secondary);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
 
 nav {
-  border-bottom: var(--orange-primary) 2px solid;
+  border-bottom: var(--green-primary) 2px solid;
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: space-around;
@@ -11,24 +23,26 @@ nav {
 }
 
 nav > button {
-  background-color: var(--orange-terciary);
-  border: var(--orange-terciary) solid 2px;
-  color: #f07818;
+  background-color: var(--beige-secondary);
+  border: var(--green-primary) solid 2px;
+  color: var(--green-primary);
   font-size: 100%;
   font-weight: 700;
   height: 40px;
   min-width: 100px;
   white-space: nowrap;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 nav > button:hover {
-  background-color: var(--orange-primary);
+  background-color: var(--green-primary);
   color: white;
 }
 
 .recipe-page-card {
+  background-color: var(--beige-secondary);
   border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px , rgba(0, 0, 0, 0.23) 0 3px 6px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
   height: fit-content;
   margin-bottom: 20px;
   overflow: hidden;
@@ -38,8 +52,8 @@ nav > button:hover {
 
 .recipe-page-card > h3 {
   align-items: center;
-  background-color: var(--blue-secondary);
-  color: black;
+  background-color: var(--green-primary);
+  color: white;
   display: flex;
   font-size: 75%;
   height: 30px;

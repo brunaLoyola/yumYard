@@ -21,18 +21,16 @@ function MealDetails({
       <section className="ingredients">
         <h3>Ingredients</h3>
         <ul className="ingredients-list">
-          <div>
-            { recipeIngredients.map((ing, i) => (
-              <li data-testid={ `${i}-ingredient-name-and-measure` } key={ i }>
-                { ing }
-              </li>)) }
-          </div>
-          <div>
-            { recipeMeasures.map((ing, i) => (
-              <li data-testid={ `${i}-ingredient-name-and-measure` } key={ i }>
-                { ing }
-              </li>)) }
-          </div>
+          { recipeIngredients.map((ingredient, index) => {
+            const measure = recipeMeasures[index];
+            if (!ingredient) return null;
+            return (
+              <li data-testid={ `${index}-ingredient-name-and-measure` } key={ index }>
+                {ingredient}
+                {measure ? ` - ${measure}` : ''}
+              </li>
+            );
+          })}
         </ul>
       </section>
       <section className="instructions">
